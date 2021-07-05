@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
+    />
+    <title>Whiteboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Side Starts -->
+      <div class="left">
+        <div class="toolbox">
+          <div class="items pencil" id="brush" data-selected="true">
+            <i class="fa-light fa-pencil fa-2x"></i>
+          </div>
+          <div class="items bg" id="bg" data-selected="false">
+            <i class="fa-light fa-chalkboard fa-2x"></i>
+          </div>
+          <div class="items" id="line" data-selected="false">
+            <i class="fa-light fa-pipe fa-2x"></i>
+          </div>
+          <div class="items eraser" id="eraser" data-selected="false">
+            <i class="fa-light fa-eraser fa-2x"></i>
+          </div>
+          <div class="items" id="save" data-selected="false">
+            <i class="fa-light fa-download fa-2x"></i>
+          </div>
+          <div class="items" id="clear" data-selected="false">
+            <i class="fa-light fa-xmark fa-2x"></i>
+          </div>
+        </div>
+        <!-- Background Options -->
+        <div class="bg-options" id="bg-menu">
+          <div class="bg-options-items">
+            <div class="black"></div>
+          </div>
+          <div class="bg-options-items">
+            <div class="red"></div>
+          </div>
+          <div class="bg-options-items">
+            <div class="green"></div>
+          </div>
+          <div class="bg-options-items">
+            <div class="white"></div>
+          </div>
+        </div>
+        <!-- Pencil Options -->
+        <div class="pencil-options" id="brush-menu">
+          <div class="options-items selected">
+            <div class="black"></div>
+          </div>
+          <div class="options-items">
+            <div class="red"></div>
+          </div>
+          <div class="options-items">
+            <div class="green"></div>
+          </div>
+          <div class="options-items">
+            <div class="white"></div>
+          </div>
+
+          <hr />
+          <div class="size-options-items selected">
+            <div class="size normal"></div>
+          </div>
+          <div class="size-options-items">
+            <div class="size mid"></div>
+          </div>
+          <div class="size-options-items">
+            <div class="size marker"></div>
+          </div>
+        </div>
+        <!-- Eraser Options -->
+        <div class="eraser-options" id="eraser-menu">
+          <div class="size-options-items selected">
+            <div class="size normal"></div>
+          </div>
+          <div class="size-options-items">
+            <div class="size mid"></div>
+          </div>
+          <div class="size-options-items">
+            <div class="size marker"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Left Side Ends -->
+      <!-- Right Side Starts -->
+      <!-- Right Side Ends -->
+      <div class="right">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
